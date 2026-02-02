@@ -54,6 +54,12 @@ datasets/
 *.csv
 *.npz
 
+# Videos / demo outputs
+*.mp4
+*.avi
+*.mov
+
+
 # macOS
 .DS_Store
 
