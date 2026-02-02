@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+env/
+venv/
+.venv/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDEs and editors
+.vscode/
+.idea/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+pip-wheel-metadata/
+
+# Testing
+.pytest_cache/
+.tox/
+
+# Logs, databases, caches
+*.log
+*.sqlite3
+*.db
+.coverage
+htmlcov/
+
+# TensorFlow / PyTorch artifacts and ML outputs
+checkpoints/
+logs/
+runs/
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.ckpt
+*.weights
+*.pb
+*.tflite
+
+# Data
+data/
+datasets/
+*.csv
+*.npz
+
+# macOS
+.DS_Store
+
+# Misc
+*.swp
+*.swo
+Thumbs.db
+__MACOSX/
+
+# Local env files
+.env
+.env.*
+
+# Keep this repo-specific files if needed: remove lines above for any model files you want tracked
