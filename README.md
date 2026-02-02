@@ -61,6 +61,41 @@ python detect_video.py --weights ./checkpoints/yolov3.tf --video /path/to/video.
 python yad2k/test_yolo.py --model-path yolo.h5 --image images/test.jpg
 ```
 
+## 🧪 Examples with this repo’s sample files (`images/`, `videos/`) and outputs (`out/`)
+
+### Example input/output (from this repo)
+
+| Input (`images/test.jpg`) | Output (`out/test.jpg`) |
+| --- | --- |
+| ![Input image](images/test.jpg) | ![Output image](out/test.jpg) |
+
+### Detect on `images/test.jpg` and save to `out/annotated.jpg` (TF2 YOLOv3)
+
+```bash
+cd yolov3-tf2
+python detect.py --weights ./checkpoints/yolov3.tf --image ..\images\test.jpg --output ..\out\annotated.jpg
+```
+
+### Detect on `videos/Test_video.mp4` and save to `out/Test_video.mp4` (TF2 YOLOv3)
+
+```bash
+cd yolov3-tf2
+python detect_video.py --weights ./checkpoints/yolov3.tf --video ..\videos\Test_video.mp4 --output ..\out\Test_video.mp4
+```
+
+### (Optional) Faster model: YOLOv3-tiny, output to `out/annotated_tiny.jpg`
+
+```bash
+cd yolov3-tf2
+python detect.py --tiny True --weights ./checkpoints/yolov3.tf --image ..\images\test.jpg --output ..\out\annotated_tiny.jpg
+```
+
+### Verify outputs exist (Windows PowerShell)
+
+```powershell
+dir .\out
+```
+
 
 ## 📚 Training & Dataset
 - VOC conversion scripts: `yad2k/voc_conversion_scripts/` (`voc_to_hdf5.py`, `voc_to_tfrecords.py`) to convert dataset annotations.
